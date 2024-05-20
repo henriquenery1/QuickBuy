@@ -8,6 +8,23 @@ body {
     align-items: center;
 }
 
+.wrapper {
+    justify-content: space-between;
+    position: absolute;
+    left: 5%;
+    width: 45%;
+    height: 75%;
+    background-color: #2D3250;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn_suporte {
+    margin-top: auto; 
+    margin-bottom: 50px;
+}
+
 .container {
     position: absolute;
     right: 5%;
@@ -29,10 +46,12 @@ h1, h2 {
     margin-bottom: 0px;
 }
 
+p {
+    margin-top: 300px;
+}
+
 .welcome {
-    position: absolute;
-    top: 100px; 
-    left: 15%;
+    text-align: center;
 }
 
 form {
