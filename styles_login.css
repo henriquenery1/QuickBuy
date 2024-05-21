@@ -75,6 +75,11 @@ input {
     font-size: large;
 }
 
+input:focus {
+    border: none;
+    outline: none;
+}
+
 .input_container{
     border-bottom: 3px solid;
     margin-top: 20px;
