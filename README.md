@@ -1,6 +1,6 @@
 🏪 QuickBuy 🏪
 
-Bem-vindo ao QuickBuy - Projeto interdisciplinar de um sistema de gerenciamento de mercado. Este sistema foi desenvolvido para simplificar o funcionamento e a administração de mercados, proporcionando uma experiência ágil e organizada para proprietários e funcionários.
+Bem-vindo ao QuickBuy - Projeto interdisciplinar para faculdade de um sistema de gerenciamento de mercado. Este sistema foi desenvolvido para simplificar o funcionamento e a administração de mercados, proporcionando uma experiência ágil e organizada para proprietários e funcionários.
 
 Funcionalidades Principais
 
