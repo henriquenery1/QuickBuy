@@ -21,6 +21,7 @@
     <div>
         <form id="productForm">
             <input type="text" id="productName" placeholder="Nome do produto" required>
+            <input type="number" id="productQuantity" placeholder="Quantidade" min="1" required>
             <button type="submit">Adicionar Produto</button>
         </form>
     </div>
@@ -35,16 +36,17 @@
                 </tr>
             </thead>
             <tbody id="productTableBody">
-                <!-- Produtos serão inseridos aqui -->
             </tbody>
             <tfoot>
-                <tr>
+                <tr class="test">
                     <td colspan="2">Total</td>
                     <td id="totalPrice">0</td>
                 </tr>
             </tfoot>
         </table>
+
     </div>
+    <button type="submit" class="finalizar">Finalizar</button>        
 
     <footer>
         <div class="footer_content">

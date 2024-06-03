@@ -1,24 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
     const products = {
-        "Arroz": { quantity: 1, price: 10.00 },
-        "Molho de tomate": { quantity: 1, price: 5.00 },
-        "Feijão": { quantity: 1, price: 7.00 },
-        "Macarrão": { quantity: 1, price: 4.00 },
-        "Açúcar": { quantity: 1, price: 3.00 },
-        "Café": { quantity: 1, price: 12.00 },
-        "Óleo de soja": { quantity: 1, price: 8.00 },
-        "Farinha de trigo": { quantity: 1, price: 6.00 },
-        "Leite": { quantity: 1, price: 4.50 },
-        "Manteiga": { quantity: 1, price: 5.50 },
-        "Pão": { quantity: 1, price: 3.50 },
-        "Queijo": { quantity: 1, price: 15.00 },
-        "Presunto": { quantity: 1, price: 13.00 },
-        "Frango": { quantity: 1, price: 20.00 },
-        "Carne bovina": { quantity: 1, price: 25.00 }
+        "arroz": { price: 10.00 },
+        "molho de tomate": { price: 5.00 },
+        "feijão": { price: 7.00 },
+        "macarrão": { price: 4.00 },
+        "açúcar": { price: 3.00 },
+        "café": { price: 12.00 },
+        "óleo de soja": { price: 8.00 },
+        "farinha de trigo": { price: 6.00 },
+        "leite": { price: 4.50 },
+        "manteiga": { price: 5.50 },
+        "pão": { price: 3.50 },
+        "queijo": { price: 15.00 },
+        "presunto": { price: 13.00 },
+        "frango": { price: 20.00 },
+        "carne bovina": { price: 25.00 }
     };
 
     const productForm = document.getElementById("productForm");
     const productNameInput = document.getElementById("productName");
+    const productQuantityInput = document.getElementById("productQuantity");
     const productTableBody = document.getElementById("productTableBody");
     const totalPriceElement = document.getElementById("totalPrice");
 
@@ -27,12 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
     productForm.addEventListener("submit", function(event) {
         event.preventDefault();
         const productName = productNameInput.value;
+        const productQuantity = parseInt(productQuantityInput.value);
+
         if (products[productName]) {
             const product = products[productName];
-            addProductToTable(productName, product.quantity, product.price);
-            totalPrice += product.price;
+            const productTotalPrice = product.price * productQuantity;
+            addProductToTable(productName, productQuantity, productTotalPrice);
+            totalPrice += productTotalPrice;
             updateTotalPrice(totalPrice);
             productNameInput.value = "";
+            productQuantityInput.value = "";
         } else {
             alert("Produto não encontrado!");
         }
