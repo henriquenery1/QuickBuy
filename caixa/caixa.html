@@ -11,7 +11,6 @@
         <button class="btn_nav">Caixa</button>
         <button class="btn_nav">Produtos</button>
         <button class="btn_nav">Financeiro</button>
-
         <div class="ribbon"></div>
     </nav>
 
@@ -19,6 +18,33 @@
         <h1>Operador de caixa</h1>
     </div>
     
+    <div>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Nome do produto" required>
+            <button type="submit">Adicionar Produto</button>
+        </form>
+    </div>
+
+    <div>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Produtos serão inseridos aqui -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="totalPrice">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
     <footer>
         <div class="footer_content">
@@ -47,5 +73,7 @@
             QuickBuy 2023
         </p>
     </footer>
+
+    <script src="script_caixa.js"></script>
 </body>
 </html>
