@@ -80,7 +80,7 @@ input:focus {
 }
 
 .input_container{
-    border-bottom: 3px solid;
+    border-bottom: 1px solid;
     margin-top: 20px;
     padding-left: 15px;
 }
