@@ -39,12 +39,18 @@
                     <input type="password" name="" id="" placeholder="Senha">
                 </div>
                 
-                <button type="submit" class="entrar">ENTRAR</button>
+                <button type="button" class="entrar">ENTRAR</button>
                 <button type="button" class="esqueci_senha">Esqueci minha senha</button>
 
             </form>
             <div class="ribbon"></div>
         </div>
+
+        <script>
+            document.querySelector('.entrar').addEventListener('click', function() {
+                window.location.href = '../servicos/servicos.html';
+            });
+        </script>
 
     </body>
 </html>
