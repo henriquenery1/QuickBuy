@@ -52,6 +52,11 @@
     </div>
 
     <button type="submit" class="finalizar">Finalizar</button> 
+
+    <div id="popup" class="popup"> <h2>Venda Finalizada!</h2>
+        <p>Obrigado :)</p>
+        <button id="btnFecharPopup">Fechar</button>
+    </div>
     
 
     <footer>
@@ -82,11 +87,7 @@
         </p>
     </footer>
 
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const totalPrice = urlParams.get('totalPrice');
-
-        document.getElementById('totalPrice').textContent = 'Preço Total: R$ ' + totalPrice;
+    <script src="script_finalizacao.js">
     </script>
 </body>
 </html>
