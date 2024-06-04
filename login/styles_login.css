@@ -8,8 +8,9 @@ body {
     font-family: "League Spartan", sans-serif;
 }
 
-.div_bem_vindo {
-    justify-content: space-between;
+.container_bem_vindo {
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 5%;
     width: 45%;
@@ -17,27 +18,26 @@ body {
     background-color: #2D3250;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
+
 .btn_suporte {
-    margin-top: auto; 
+    margin-top: auto;
     margin-bottom: auto;
 }
 
-.div_login {
+.container_login {
     position: absolute;
     right: 5%;
     width: 45%;
     height: 75%;
     background-color: #424769;
     box-shadow: 0px 4px 70px 0px #00000099;
-    padding-top: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
     padding-top: 10px;
 }
 
@@ -70,36 +70,29 @@ input {
     padding: 5px 0;
     margin-left: 10px;
     height: 30px;
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
     font-size: large;
     color: #AAB0D6;
 }
 
 input:focus {
-    border: none;
     outline: none;
 }
 
-.input_container{
+.container_input {
     border-bottom: 1px solid;
     margin-top: 20px;
     padding-left: 15px;
 }
 
-.user_icon {
+.icone_usuario, .icone_senha {
     width: 20px;
     height: 20px;
     fill: #AAB0D6;
 }
 
-.password_icon {
-    width: 20px;
-    height: 20px;
-    fill: #AAB0D6;
-}
-
-#btn_suporte {
+#btn_suporte, .btn_entrar {
     background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
     border: none;
     color: #ffffff;
@@ -109,52 +102,31 @@ input:focus {
     cursor: pointer;
     border-radius: 40px;
     width: 250px;
-    position: fixed;
     text-align: center;
-    margin-left: 15%;
 }
 
-.entrar {
-    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
-    border: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+.btn_entrar {
     margin-top: 70px;
-    cursor: pointer;
-    border-radius: 5px;
-    height: 53px;
-    border-radius: 40px;
-    width: 250px;
-    font-size: 28px;
 }
 
-.esqueci_senha {
+.btn_esqueci_senha {
     background-color: rgba(170, 176, 214, 0);
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    color: #AAB0D6; 
     cursor: pointer;
     height: 60px;
     width: 300px;
-    color: #AAB0D6; 
     border: 0px solid #AAB0D6; 
     margin-top: 20px;
 }
-
-.esqueci_senha:hover {
+.btn_esqueci_senha:hover {
     opacity: 0.9;
 }
-
 button:hover {
     opacity: 0.9;
 }
-
-.ribbon {
+.faixa {
     width: 100%;
     height: 60px;
     background-color: #8085A8;
