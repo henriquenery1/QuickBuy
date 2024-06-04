@@ -1,0 +1,147 @@
+body {
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #424769;
+    color: #F5F5F5;
+}
+
+nav {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.btn_nav {
+    color: #424769;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    border: none;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 50px;
+    color: #AAB0D6;
+}
+
+h2 {
+    color: #F7B17B;
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+h3{
+    margin-left: 80px;   
+}
+
+.ribbon {
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-image-slice: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+footer .footer_content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer .footer_content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    flex: 1;
+    flex-direction: column;
+}
+
+footer h3 {
+    color: #424769;
+    font-size: 40px;
+    margin: 10px 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    color: #8085A8;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+footer p {
+    color: #8085A8;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.container h3 {
+    margin-right: 10px; /* Espaço entre o h3 e o input */
+}
+
+.display{
+    display: flex;
+    align-content: end;
+}
+
+.geral{
+    margin-left: 80px;
+}
+
+.final{
+    margin-left: 80px;
+}
+
+.button_cal {
+    font-family: "League Spartan", sans-serif;
+    margin-top: 12px;
+    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 90px;
+    height: 52px;
+    width: 267px;
+    font-size: 20px;
+}
+
+.resultado{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+    <link rel="stylesheet" href="gastos.css">
+    </style>
+    <script>
+        function calcularLucroGastos() {
+            // Coletar valores de gastos
+            let historicoCompras = parseFloat(document.getElementById('historicoCompras').value) || 0;
+            let salarioFuncionarios = parseFloat(document.getElementById('salarioFuncionarios').value) || 0;
+            let infraestrutura = parseFloat(document.getElementById('infraestrutura').value) || 0;
+            let publicidade = parseFloat(document.getElementById('publicidade').value) || 0;
+            let contas = parseFloat(document.getElementById('contas').value) || 0;
+
+            // Calcular total de gastos
+            let totalGastos = historicoCompras + salarioFuncionarios + infraestrutura + publicidade + contas;
+
+            // Coletar valores de fechamento do caixa
+            let fechamentoDiario = parseFloat(document.getElementById('fechamentoDiario').value) || 0;
+            let fechamentoSemanal = parseFloat(document.getElementById('fechamentoSemanal').value) || 0;
+            let fechamentoMensal = parseFloat(document.getElementById('fechamentoMensal').value) || 0;
+            let totalAcumuladoMes = parseFloat(document.getElementById('totalAcumuladoMes').value) || 0;
+
+            // Calcular total de receitas
+            let totalReceitas = fechamentoDiario + fechamentoSemanal + fechamentoMensal + totalAcumuladoMes;
+
+            // Calcular lucro líquido
+            let lucroLiquido = totalReceitas - totalGastos;
+
+            // Atualizar campos de resultado
+            document.querySelector('.gastos').value = totalGastos.toFixed(2);
+            document.querySelector('.lucro').value = lucroLiquido.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <button class="btn_nav">Caixa</button>
+        <button class="btn_nav">Produtos</button>
+        <button class="btn_nav">Financeiro</button>
+        <div class="ribbon"></div>
+    </nav>
+
+    <h1>Financeiro</h1>
+
+    <div class="display">
+        <div class="gastos">
+            <h2>Gastos:</h2>
+            <div class="container">
+                <h3>Histórico de compras:</h3>
+                <input id="historicoCompras" class="bold-input" type="text" style="margin-left: 150px; background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Soma Total de Salário dos Funcionários:</h3>
+                <input id="salarioFuncionarios" class="bold-input" type="text" style="background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Infraestrutura: (luz, etc)</h3>
+                <input id="infraestrutura" class="bold-input" type="text" style="margin-left: 128px;background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Publicidade:</h3>
+                <input id="publicidade" class="bold-input" type="text" style="margin-left: 224px; background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Contas:</h3>
+                <input id="contas" class="bold-input" type="text" style="margin-left: 261px; background-color: #8085A8; border-color: #8085A8;">
+            </div>
+        </div>
+
+        <div class="geral">
+            <h2>Geral:</h2>
+            <div class="container">
+                <h3>Fechamento do caixa: (Diário)</h3>
+                <input id="fechamentoDiario" class="bold-input" type="text" style="margin-left: 22px;  background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Fechamento do caixa: (Semanal)</h3>
+                <input id="fechamentoSemanal" class="bold-input" type="text" style=" background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Fechamento do caixa: (Mensal)</h3>
+                <input id="fechamentoMensal" class="bold-input" type="text" style="margin-left: 14px; background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Total Acumulado do Mês</h3>
+                <input id="totalAcumuladoMes" class="bold-input" type="text" style="margin-left: 68px; background-color: #8085A8; border-color: #8085A8;">
+            </div>
+        </div>
+
+        <div class="final">
+            <h2>Final:</h2>
+            <div class="container">
+                <h3>Lucro Líquido:</h3>
+                <input id="lucroLiquido" class="bold-input" type="text" style="margin-left: 110px; background-color: #8085A8; border-color: #8085A8;">
+            </div>
+            <div class="container">
+                <h3>Salário médio funcionários:</h3>
+                <input id="salarioMedioFuncionarios" class="bold-input" type="text" style=" background-color: #8085A8; border-color: #8085A8;">
+            </div>
+        </div>
+    </div>
+    
+    <button class="button_cal" type="button" onclick="calcularLucroGastos()">Calcular lucro mensal</button>
+
+    <div class="resultado">  
+        <input type="text" class="bold-input gastos" readonly>
+        <input type="text" class="bold-input lucro" readonly>
+    </div>
+
+    <footer>
+        <div class="footer_content">
+            <div>
+                <h3>Institucional</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Tela 1</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Loja</h3>
+                <ul>
+                    <li>Página 1</li>
+                    <li>Página 2</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Siga a gente</h3>
+            </div>
+        </div>
+        <p>QuickBuy 2023</p>
+    </footer>
+</body>
+</html>
