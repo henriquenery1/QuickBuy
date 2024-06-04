@@ -77,5 +77,15 @@
     </footer>
 
     <script src="script_caixa.js"></script>
+
+    <script>
+        document.querySelector('.finalizar').addEventListener('click', function() {
+            // Obter o preço total da compra
+            let totalPrice = document.getElementById('totalPrice').textContent;
+
+            // Redirecionar para a outra página, passando o preço total como parâmetro na URL
+            window.location.href = '../finalizacao_venda/finalizacao.html?totalPrice=' + totalPrice;
+        });
+    </script>
 </body>
 </html>

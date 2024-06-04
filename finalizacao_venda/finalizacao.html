@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <link rel="stylesheet" href="styles_finalizacao.css">
+</head>
+<body>
+    <nav>
+        <button class="btn_nav">Caixa</button>
+        <button class="btn_nav">Produtos</button>
+        <button class="btn_nav">Financeiro</button>
+
+        <div class="ribbon"></div>
+    </nav>
+
+    <div>
+        <h1>Operador de caixa</h1>
+    </div>
+
+    <div>
+        <form id="paymentForm">
+            <label for="paymentMethod">Método de Pagamento:</label>
+            <select id="paymentMethod" required>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão</option>
+            </select>
+
+            <br><br>
+
+            <label for="installments">Número de Parcelas:</label>
+            <select id="installments" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <br><br>
+
+            <div id="totalPrice"></div>
+        </form>
+    </div>
+
+    <button type="submit" class="finalizar">Finalizar</button> 
+    
+
+    <footer>
+        <div class="footer_content">
+            <div>
+                <h3>Institucional</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Tela 1</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Loja</h3>
+                <ul>
+                    <li>Página 1</li>
+                    <li>Página 2</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Siga a gente</h3>
+            </div>
+        </div>
+
+        <p>
+            QuickBuy 2023
+        </p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalPrice = urlParams.get('totalPrice');
+
+        document.getElementById('totalPrice').textContent = 'Preço Total: R$ ' + totalPrice;
+    </script>
+</body>
+</html>
