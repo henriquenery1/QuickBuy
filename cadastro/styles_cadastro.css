@@ -1,0 +1,75 @@
+.container_nome {
+    margin-left: 182px;
+    margin-right: 0;
+}
+
+.titulo_pequeno {
+    font-size: 18px;
+    margin: 0;
+    margin-left: 15px; 
+    color: #8085A8;
+}
+
+.input_grande {
+    width: 450px;
+    height: 30px;
+    border-radius: 100px;
+    border-color: #424769;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container_cpf {
+    margin-left: 700px;
+    margin-top: -57px;
+    margin-right: 0;
+}
+
+.container_data { 
+    margin-left: 182px;
+    margin-top: 30px;
+    margin-right: 0;
+}
+
+.container_cargo {
+    margin-left: 700px;
+    margin-top: -55px;
+    margin-right: 0;
+}
+
+.select_grande {
+    width: 474px;
+    height: 34px;
+    border-radius: 100px;
+    border-color: #424769;
+    font-size: 18px;
+    padding-left: 10px;
+    border-width: 2px;
+}
+
+.container_salario {
+    margin-left: 182px;
+    margin-top: 31px;
+    margin-right: 0;
+}
+
+.container_senha {
+    margin-left: 700px;
+    margin-top: -57px;
+    margin-right: 0;
+}
+
+.btn_cadastrar {
+    margin-left: 525px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
+    border-radius: 100px;
+    width: 300px;
+    height: 34px;
+    border: none;
+    font-size: 18px;
+    color:#F5F5F5;
+}
+
