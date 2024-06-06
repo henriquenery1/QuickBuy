@@ -16,7 +16,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.btn_caixa {
+.btn_nav {
     color: #424769;
     font-size: 25px;
     font-weight: bold;
@@ -24,36 +24,7 @@ nav {
     border: none;
     margin-left: 70px;
     margin-bottom: 15px;
-}
-
-.btn_produtos {
-    color: #424769;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: none;
-    margin-left: 70px;
-    margin-bottom: 15px;
-}
-
-.btn_financeiro {
-    color: #424769;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: none;
-    margin-left: 70px;
-    margin-bottom: 15px;
-}
-
-.btn_cadastro {
-    color: #424769;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: none;
-    margin-left: 70px;
-    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .icone_usuario {
