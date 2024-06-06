@@ -1,27 +1,51 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const buttonCaixa = document.getElementById('btn_caixa');
-    const buttonProdutos = document.getElementById('btn_produtos');
-    const buttonFinanceiro = document.getElementById('btn_financeiro');
-    const buttonCadastro = document.getElementById('btn_cadastro');
-    const image = document.getElementById('navigate-image');
+document.addEventListener('DOMContentLoaded', function () {
+    const navButtons = document.querySelectorAll('.btn_nav');
+    const userIcon = document.querySelector('.icone_usuario');
 
-    buttonCaixa.addEventListener('click', function() {
-        window.location.href = '../caixa/caixa.html';
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const buttonText = button.textContent.trim().toLowerCase();
+            let page = '';
+
+            switch (buttonText) {
+                case 'caixa':
+                    page = 'caixa/caixa.html';
+                    break;
+                case 'produtos':
+                    page = 'produtos/produtos.html';
+                    break;
+                case 'financeiro':
+                    page = 'gastos/gastos.html';
+                    break;
+                case 'cadastro':
+                    page = 'cadastro/cadastro.html';
+                    break;
+                default:
+                    page = 'servicos/servicos.html';
+            }
+
+            window.location.href = page;
+
+            const url = `../${page}`;
+            window.location.href = url;
+        });
     });
 
-    buttonProdutos.addEventListener('click', function() {
-        window.location.href = '.html';
+    userIcon.addEventListener('click', () => {
+        window.location.href = '/perfil/perfil.html';
     });
 
-    buttonFinanceiro.addEventListener('click', function() {
-        window.location.href = '../gastos/gastos.html';
-    });
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (loggedInUser) {
+        const user = JSON.parse(loggedInUser);
+        const userNameDisplay = document.createElement('div');
+        userNameDisplay.textContent = `Olá, ${user.name}`;
+        userNameDisplay.style.color = '#FFFFFF';
+        userNameDisplay.style.fontWeight = 'bold';
+        userNameDisplay.style.marginLeft = 'auto';
+        userNameDisplay.style.marginRight = '20px';
+        userNameDisplay.style.fontSize = '20px';
 
-    buttonCadastro.addEventListener('click', function() {
-        window.location.href = '../cadastro/cadastro.html';
-    });
-
-    image.addEventListener('click', function() {
-        window.location.href = '../perfil/perfil.html';
-    });
+        userIcon.insertAdjacentElement('beforebegin', userNameDisplay);
+    }
 });
