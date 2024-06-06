@@ -13,6 +13,8 @@ nav {
     padding-top: 30px;
     background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
 }
 
 .btn_nav {
@@ -30,7 +32,7 @@ nav {
     width: 25px;
     height: 25px;
     fill: #FFFFFF;
-    margin-left: 525px;
+    margin-left: 250px;
 }
 
 
