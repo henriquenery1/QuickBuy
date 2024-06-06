@@ -39,3 +39,7 @@ document.getElementById('nomeUsuario').addEventListener('keypress', function(eve
       fazerLogin();
   }
 });
+
+document.getElementById('btn_esqueci_senha').addEventListener('click', function() {
+  window.location.href = '../esqueceu_senha/esqueceu.html'; //
+});
