@@ -4,6 +4,11 @@
     background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
 }
 
+.img_logo {
+    height: 280px;
+    margin-left: -95px;
+}
+
 .primeira_div {
     background-color: #424769;
     padding-left: 200px;
@@ -23,8 +28,9 @@
 .paragrafo_primeira_div {
     color: #EBEBEB;
     width: 35%;
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: -50px;
 }
 
 .segunda_div {
@@ -42,7 +48,6 @@ h2 {
 .paragrafo_segunda_div {
     color: #5A5A5A;
     text-align: center;
-    width: 25%;
     margin: 15px auto;
     font-size: 22px;
 }
