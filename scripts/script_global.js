@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     page = 'produtos/produtos.html';
                     break;
                 case 'financeiro':
-                    page = 'gastos/gastos.html';
+                    page = 'financeiro/financeiro.html';
                     break;
                 case 'cadastro':
                     page = 'cadastro/cadastro.html';
