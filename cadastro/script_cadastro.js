@@ -6,16 +6,20 @@ function fazerCadastro() {
     const salarioUsuario = document.getElementById("salarioUsuario").value;
     const senhaUsuario = document.getElementById("senhaUsuario").value;
 
-    // Verifica se já há usuários cadastrados no Local Storage
     let usuariosCadastrados = JSON.parse(localStorage.getItem('usuariosCadastrados')) || [];
 
-    // Adiciona o novo usuário à lista de usuários cadastrados
-    usuariosCadastrados.push({ nome: nomeUsuario, cpf: cpfUsuario, dt_nascimento: dataNascimento, cargo: cargo, salario: salarioUsuario, senha: senhaUsuario});
+    let idUsuario;
+    if (usuariosCadastrados.length > 0) {
+        const lastUser = usuariosCadastrados[usuariosCadastrados.length - 1];
+        idUsuario = lastUser.id + 1;
+    } else {
+        idUsuario = 1;
+    }
 
-    // Salva a lista atualizada no Local Storage
+    usuariosCadastrados.push({ id: idUsuario, nome: nomeUsuario, cpf: cpfUsuario, dt_nascimento: dataNascimento, cargo: cargo, salario: salarioUsuario, senha: senhaUsuario });
+
     localStorage.setItem('usuariosCadastrados', JSON.stringify(usuariosCadastrados));
 
-    // Redireciona para a página de login
     window.location.href = '../login/login.html';
 
     alert("Cadastro realizado com sucesso.");
