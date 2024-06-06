@@ -20,7 +20,5 @@ function fazerCadastro() {
 
     localStorage.setItem('usuariosCadastrados', JSON.stringify(usuariosCadastrados));
 
-    window.location.href = '../login/login.html';
-
     alert("Cadastro realizado com sucesso.");
 }
