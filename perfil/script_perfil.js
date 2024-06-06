@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const image = document.getElementById('navigate-image');
 
     buttonCaixa.addEventListener('click', function() {
-        window.location.href = 'caixa.html';
+        window.location.href = '../caixa/caixa.html';
     });
 
     buttonProdutos.addEventListener('click', function() {
@@ -34,15 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     buttonFinanceiro.addEventListener('click', function() {
-        window.location.href = 'gastos.html';
+        window.location.href = '../gastos/gastos.html';
     });
 
     buttonCadastro.addEventListener('click', function() {
-        window.location.href = 'cadastro.html';
+        window.location.href = '../cadastro/cadastro.html';
     });
 
     image.addEventListener('click', function() {
-        window.location.href = 'perfil.html';
+        window.location.href = '../perfil/perfil.html';
     });
 });
 
