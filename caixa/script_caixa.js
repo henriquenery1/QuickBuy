@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const productQuantityInput = document.getElementById("productQuantity");
     const productTableBody = document.getElementById("productTableBody");
     const totalPriceElement = document.getElementById("totalPrice");
+    const finalizarButton = document.querySelector(".finalizar");
 
     let totalPrice = 0;
 
@@ -41,6 +42,12 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             alert("Produto não encontrado!");
         }
+    });
+
+    finalizarButton.addEventListener("click", function() {
+        const urlParams = new URLSearchParams();
+        urlParams.append('totalPrice', totalPrice.toFixed(2));
+        window.location.href = `../finalizacao_venda/finalizacao.html?${urlParams.toString()}`;
     });
 
     function addProductToTable(name, quantity, price) {
