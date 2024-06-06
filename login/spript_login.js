@@ -4,7 +4,6 @@ function fazerLogin() {
 
   let usuariosCadastrados = JSON.parse(localStorage.getItem('usuariosCadastrados')) || [];
   console.log(usuariosCadastrados)
-  console.log("@@@@@@@@@@@@@@@@@");
   
   const usuariosPadroes = [
     { nome: "teste", senha: "123" },
@@ -41,5 +40,5 @@ document.getElementById('nomeUsuario').addEventListener('keypress', function(eve
 });
 
 document.getElementById('btn_esqueci_senha').addEventListener('click', function() {
-  window.location.href = '../esqueceu_senha/esqueceu.html'; //
+  window.location.href = '../esqueceu_senha/esqueceu.html'; 
 });
