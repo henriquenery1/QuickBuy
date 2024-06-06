@@ -19,14 +19,14 @@ Mantenha o controle do estoque de produtos, atualizando automaticamente com cada
 Registre todas as transações de venda realizadas no mercado, incluindo informações sobre os produtos vendidos, quantidade, preço e cliente. Este recurso permite acompanhar o desempenho das vendas e gerar relatórios detalhados para análise.
 
 ### Cadastro de Funcionários 👥
-Gerencie os funcionários do mercado, registrando informações pessoais, cargos e horários de trabalho. O sistema facilita a administração do quadro de funcionários, garantindo um controle eficiente e organizado.
+Gerencie os funcionários do mercado, registrando informações pessoais e cargos. O sistema facilita a administração do quadro de funcionários.
 
 ### Controle Financeiro 💹
 Monitore as finanças do mercado, incluindo receitas, despesas e lucros. A tela de controle financeiro oferece uma visão abrangente das operações financeiras, auxiliando na tomada de decisões estratégicas.
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://choosealicense.com/licenses/mit/) para mais detalhes.
 
 ---
 
@@ -61,4 +61,3 @@ Agradecemos a todos os colaboradores e professores que apoiaram este projeto.
 
 - [Documentação do Projeto](#)
 - [Guia de Contribuição](#)
-- [Código de Conduta](#)
