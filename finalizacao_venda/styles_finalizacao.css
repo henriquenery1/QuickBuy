@@ -61,34 +61,34 @@ input[type="submit"]:hover {
 }
 
 #popup {
-    position: fixed; /* Position the popup relative to the viewport */
-    top: 50%; /* Center the popup vertically */
-    left: 50%; /* Center the popup horizontally */
-    transform: translate(-50%, -50%); /* Apply transforms for centering */
-    background-color: #fff; /* Background color */
-    padding: 20px; /* Padding around the content */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Drop shadow */
-    z-index: 1000; /* Ensure the popup is above other elements */
-    display: none; /* Initially hide the popup */
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #8085A8; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    display: none;
 }
 
 #popup.visible {
-    display: block; /* Show the popup */
+    display: block;
     background-color: #F5F5F5;
     text-align: center;
 }
 
 #popup h2 {
-    margin-top: 50px; /* Remove default top margin */
-    font-size: 40px; /* Adjust font size */
-    font-weight: bold; /* Make the text bold */
+    margin-top: 50px; 
+    font-size: 40px;
+    font-weight: bold;
     color: #424769;
     text-align: center;
 }
 
 #popup p {
-    font-size: 30px; /* Adjust font size for the paragraph */
+    font-size: 30px;
     color: #424769;
     font-weight: bold;
 }
@@ -113,5 +113,5 @@ input[type="submit"]:hover {
 }
 
 #btnFecharPopup:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
