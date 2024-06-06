@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 case 'cadastro':
                     page = 'cadastro/cadastro.html';
                     break;
+                case 'sair':
+                    page = 'login/login.html';
+                    break;    
                 default:
                     page = 'servicos/servicos.html';
             }
