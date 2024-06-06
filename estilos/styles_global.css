@@ -15,7 +15,7 @@ nav {
     background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%)
 }
 
-.btn_nav1 {
+.btn_nav {
     color: #424769;
     font-size: 25px;
     font-weight: bold;
@@ -23,36 +23,6 @@ nav {
     border: none;
     margin-left: 70px;
     margin-bottom: 15px;
-}
-
-.btn_nav2 {
-    color: #424769;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: none;
-    margin-left: 70px;
-    margin-bottom: 15px;
-}
-
-.btn_nav3 {
-    color: #424769;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: none;
-    margin-left: 70px;
-    margin-bottom: 25px;
-}
-
-.btn_nav4 {
-    color: #424769;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: none;
-    margin-left: 70px;
-    margin-bottom: 25px;
 }
 
 .icone_usuario {
