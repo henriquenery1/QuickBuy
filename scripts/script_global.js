@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
             let page = '';
 
             switch (buttonText) {
+                case 'início':
+                    page = 'servicos/servicos.html';
+                    break;
                 case 'caixa':
                     page = 'caixa/caixa.html';
                     break;
