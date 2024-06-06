@@ -15,7 +15,37 @@ nav {
     background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%)
 }
 
-.btn_nav {
+.btn_caixa {
+    color: #424769;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+
+.btn_produtos {
+    color: #424769;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+
+.btn_financeiro {
+    color: #424769;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+
+.btn_cadastro {
     color: #424769;
     font-size: 25px;
     font-weight: bold;
