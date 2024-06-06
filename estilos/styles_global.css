@@ -12,8 +12,7 @@ nav {
     background-color: #F5F5F5;
     width: 100%;
     padding-top: 30px;
-    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
-    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
+    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%)
 }
 
 .btn_nav1 {
@@ -82,7 +81,6 @@ footer {
     flex-direction: column; 
     align-items: center;
     bottom: 0;
-    width: 100%;
 }
 
 footer .footer_content {
@@ -103,7 +101,7 @@ footer .footer_content div {
 
 footer h3 {
     color: #424769;
-    font-size: 25px;
+    font-size: 22px;
     margin: 10px 20px;
     font-family: 'Bebas Neue', sans-serif;
 }

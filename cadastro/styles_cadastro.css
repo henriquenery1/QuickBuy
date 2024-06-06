@@ -1,5 +1,5 @@
 .container_nome {
-    margin-left: 182px;
+    margin-left: 35px;
     margin-right: 0;
 }
 
@@ -21,19 +21,19 @@
 }
 
 .container_cpf {
-    margin-left: 700px;
+    margin-left: 650px;
     margin-top: -57px;
     margin-right: 0;
 }
 
 .container_data { 
-    margin-left: 182px;
+    margin-left: 35px;
     margin-top: 30px;
     margin-right: 0;
 }
 
 .container_cargo {
-    margin-left: 700px;
+    margin-left: 650px;
     margin-top: -55px;
     margin-right: 0;
 }
@@ -49,21 +49,20 @@
 }
 
 .container_salario {
-    margin-left: 182px;
+    margin-left: 35px;
     margin-top: 31px;
     margin-right: 0;
 }
 
 .container_senha {
-    margin-left: 700px;
+    margin-left: 650px;
     margin-top: -57px;
     margin-right: 0;
 }
 
 .btn_cadastrar {
-    margin-left: 525px;
     margin-top: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
     border-radius: 100px;
     width: 300px;
@@ -73,3 +72,8 @@
     color:#F5F5F5;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
