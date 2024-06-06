@@ -12,7 +12,8 @@ nav {
     background-color: #F5F5F5;
     width: 100%;
     padding-top: 30px;
-    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%)
+    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn_caixa {
@@ -81,6 +82,9 @@ footer {
     flex-direction: column; 
     align-items: center;
     bottom: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 footer .footer_content {
