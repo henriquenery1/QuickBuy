@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     userIcon.addEventListener('click', () => {
-        window.location.href = '/perfil/perfil.html';
+        window.location.href = '../perfil/perfil.html';
     });
 
     const loggedInUser = localStorage.getItem('loggedInUser');
