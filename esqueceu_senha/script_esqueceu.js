@@ -1,8 +1,11 @@
 const enviarButton = document.querySelector('.btn_enviar')
+const btnFecharPopup = document.getElementById('btnFecharPopup');
+const popup = document.getElementById('popup');
+
 
 enviarButton.addEventListener('click', function() {
     setTimeout(function() {
-        const popup = document.getElementById('popup');
+        popup.classList.add('visible');
         }, 900); 
     });
 
