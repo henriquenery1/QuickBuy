@@ -72,6 +72,10 @@
     color:#F5F5F5;
 }
 
+.forms_cadastro {
+    height: 530px;
+}
+
 form {
     display: flex;
     flex-direction: column;
