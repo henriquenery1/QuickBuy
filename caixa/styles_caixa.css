@@ -33,6 +33,10 @@ form button:hover {
     opacity: 0.8;
 }
 
+.div_tabela {
+    height: 500px;
+}
+
 table {
     width: 90%;
     margin: 20px auto;
