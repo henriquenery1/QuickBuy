@@ -27,8 +27,10 @@
         <form id="paymentForm">
             <label for="paymentMethod">Método de Pagamento:</label>
             <select id="paymentMethod" required>
-                <option value="dinheiro">Dinheiro</option>
-                <option value="cartao">Cartão</option>
+                <option value="Pix">Pix</option>
+                <option value="Crédito">Crédito</option>
+                <option value="Débito">Débito</option>
+                <option value="Dinheiro">Dinheiro</option>
             </select>
 
             <br><br>
@@ -47,6 +49,13 @@
                 <option value="10">10</option>
                 <option value="11">11</option>
                 <option value="12">12</option>
+            </select>
+
+            <br><br>
+            <label for="installments">Cliente fidelidade:</label>
+            <select id="installments" required>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
             </select>
 
             <br><br>
@@ -104,5 +113,6 @@
         </p>
     </footer>
     <script src="../scripts/script_global.js"></script>
+    <script src="script_finalizacao.js"></script>
 </body>
 </html>

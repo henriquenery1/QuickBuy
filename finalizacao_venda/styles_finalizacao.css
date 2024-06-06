@@ -12,6 +12,7 @@ form {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     color: #424769;
     font-weight: bold;
+    height: 390px;
 }
 
 label {
