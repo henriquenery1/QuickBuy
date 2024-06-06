@@ -29,8 +29,8 @@ body {
 .container_login {
     position: absolute;
     right: 5%;
-    width: 45%;
-    height: 75%;
+    width: 40%;
+    height: 70%;
     background-color: #424769;
     box-shadow: 0px 4px 70px 0px #00000099;
     border-radius: 10px;
@@ -52,12 +52,8 @@ h1, h2 {
     margin-bottom: 0px;
 }
 
-p {
-    margin-top: auto;
-    font-size: large;
-    width: 90%;
-    text-align: center;
-    color: #C2C0C0;
+img {
+    width: 800px;
 }
 
 form {
