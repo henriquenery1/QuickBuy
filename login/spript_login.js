@@ -1,37 +1,41 @@
 function fazerLogin() {
-    const nomeUsuario = document.getElementById("nomeUsuario").value;
-    const senha = document.getElementById("senha").value;
+  const nomeUsuario = document.getElementById("nomeUsuario").value;
+  const senha = document.getElementById("senha").value;
+
+  let usuariosCadastrados = JSON.parse(localStorage.getItem('usuariosCadastrados')) || [];
+  console.log(usuariosCadastrados)
+  console.log("@@@@@@@@@@@@@@@@@");
   
-    const usuariosCadastrados = [
-      { nome: "teste", senha: "123" },
-      { nome: "Henrique", senha: "senha" },
-      { nome: "Paulo", senha: "01" },
-    ];
-  
-    const usuarioEncontrado = usuariosCadastrados.find(
+  const usuariosPadroes = [
+    { nome: "teste", senha: "123" },
+    { nome: "Henrique", senha: "senha" },
+    { nome: "Paulo", senha: "01" },
+  ];
+
+  usuariosCadastrados = [...usuariosCadastrados, ...usuariosPadroes];
+
+  const usuarioEncontrado = usuariosCadastrados.find(
       (usuario) => usuario.nome === nomeUsuario && usuario.senha === senha
-    );
-  
-    if (usuarioEncontrado) {
+  );
+
+  if (usuarioEncontrado) {
       const url = `../servicos/servicos.html?usuario=${usuarioEncontrado.nome}`;
       window.location.href = url;
-    } else {
+  } else {
       alert("Usuário ou senha inválidos.");
-    }
+  }
 }
-  
+
 document.querySelector('.btn_entrar').addEventListener('click', fazerLogin);
 
 document.getElementById('senha').addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        fazerLogin();
-    }
+  if (event.key === 'Enter') {
+      fazerLogin();
+  }
 });
 
 document.getElementById('nomeUsuario').addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        fazerLogin();
-    }
+  if (event.key === 'Enter') {
+      fazerLogin();
+  }
 });
-
-  
