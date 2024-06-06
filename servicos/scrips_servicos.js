@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     navButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const buttonText = button.textContent.trim().toLowerCase();
+            const buttonText = button.value.trim().toLowerCase();
             let page = '';
 
             switch (buttonText) {
