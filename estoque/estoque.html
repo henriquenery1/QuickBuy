@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" href="styles_estoque.css">
+    <link rel="stylesheet" href="../estilos/styles_global.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <button class="btn_nav">Início</button>
+        <button class="btn_nav">Caixa</button>
+        <button class="btn_nav">Estoque</button>
+        <button class="btn_nav">Financeiro</button>
+        <button class="btn_nav">Cadastro</button>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icone_usuario"  id="navigate_image" viewBox="0 0 448 512" style="cursor: pointer;">
+            <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/>
+        </svg>
+        <button class="btn_nav">Sair</button>
+    </nav>
+
+    <div>
+        <h1>Estoque:</h1>
+    </div>
+    
+    <div>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Nome" required>
+            <input type="text" id="productCode" placeholder="Código" required>
+            <input type="text" id="productCategory" placeholder="Categoria" required>
+            <input type="text" id="productQtd" placeholder="Quantidade" required>
+            <input type="text" id="productPrice" placeholder="Preço" required>
+			
+            <button type="submit">Adicionar Produto</button>
+        </form>
+    </div>
+
+    <div class="div_tabela">
+        <table id="productTable">
+            <thead>
+                <tr>
+					<th>Nome</th>
+					<th>Código</th>
+					<th>Categoria</th>
+					<th>Quantidade</th>
+					<th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+            </tbody>
+        </table>
+
+    </div>
+
+	<footer>
+        <div class="footer_content">
+            <div>
+                <h3>CONTATO</h3>
+                <ul>
+                    <li>quickbuy.app@outlook.com</li>
+                    <li>quickbuy_instagram</li>
+                    <li>quickbuy_tiktok</li>
+                    <li>quickbuy_seilaoq</li>
+                    <li>(11) 99999-9999</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>DESENVOLVEDORES</h3>
+                <ul>
+                    <li>Anna Carolina De Azevedo Leite</li>
+                    <li>Giulia Caroline Claro</li>
+                    <li>Henrique Nery Cordeiro</li>
+                    <li>Leonardo Dias Dos Santos</li>
+                    <li>Pedro Henrique Batista Dos Santos</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>ACOMPANHE-NOS</h3>
+                <ul>
+                    <li>github.com/annacarolinaa</li>
+                    <li>github.com/GiuCaroline</li>
+                    <li>github.com/henriquenery1</li>
+                    <li>github.com/Leo-Santoss</li>
+                    <li>github.com/pedro_atualizar</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>
+            QuickBuy® 2024
+        </p>
+    </footer>
+
+    <script src="script_estoque.js"></script>
+    <script src="../scripts/script_global.js"></script>
+</body>
+</html>
