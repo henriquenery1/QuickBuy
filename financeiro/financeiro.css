@@ -10,8 +10,9 @@ h3{
 
 input {
     border-radius: 10px;
-    height: 20px;
+    height: 26px;
     background-color: #8085A8;
+    border: 0;
 }
  
 
@@ -20,21 +21,18 @@ input {
     align-items: center;
     margin-bottom: 1em;
 }
-.container h3 {
-    margin-right: 10px; /* Espaço entre o h3 e o input */
-}
 
 .display{
     display: flex;
-    align-content: end;
+    margin-left: 100px;
 }
 
 .geral{
-    margin-left: 80px;
+    margin-left: 200px;
 }
 
 .final{
-    margin-left: 80px;
+    margin-left: 200px;
 }
 
 .button_cal {
