@@ -25,8 +25,8 @@ Gerencie os funcionários do mercado, registrando informações pessoais e cargo
 Monitore as finanças do mercado, incluindo receitas, despesas e lucros. A tela de controle financeiro oferece uma visão abrangente das operações financeiras, auxiliando na tomada de decisões estratégicas.
 
 ## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://choosealicense.com/licenses/mit/) para mais detalhes.
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/) <br>
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [MIT licensed](https://choosealicense.com/licenses/mit/) para mais detalhes.
 
 ---
 
