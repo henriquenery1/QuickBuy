@@ -35,7 +35,7 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [MIT licensed](
 - Giulia Caroline Claro ([GitHub](https://github.com/GiuCaroline))
 - Henrique Nery Cordeiro ([GitHub](https://github.com/henriquenery1))
 - Leonardo Dias Dos Santos ([GitHub](https://github.com/Leo-Santoss))
-- Pedro Henrique Batista Dos Santos ([GitHub](https://github.com/pedro_algumacoisa_atualizar))
+- Pedro Henrique Batista Dos Santos ([GitHub](https://github.com/pedrosantos664))
 
 ---
 
