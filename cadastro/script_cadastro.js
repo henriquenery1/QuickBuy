@@ -22,3 +22,18 @@ function fazerCadastro() {
 
     alert("Cadastro realizado com sucesso.");
 }
+
+const finalizarButton = document.querySelector('.finalizar');
+    const popup = document.getElementById('popup');
+    const btnFecharPopup = document.getElementById('btnFecharPopup');
+
+    finalizarButton.addEventListener('click', function() {
+        setTimeout(function() {
+            popup.classList.add('visible');
+        }, 900); 
+    });
+
+    btnFecharPopup.addEventListener('click', function() {
+        popup.classList.remove('visible');
+        window.location.href = "../cadastro/cadastro.html";
+});

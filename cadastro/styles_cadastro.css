@@ -81,3 +81,59 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
+#popup {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #8085A8; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    display: none;
+}
+
+#popup.visible {
+    display: block;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+#popup h2 {
+    margin-top: 50px; 
+    font-size: 40px;
+    font-weight: bold;
+    color: #424769;
+    text-align: center;
+}
+
+#popup p {
+    font-size: 30px;
+    color: #424769;
+    font-weight: bold;
+}
+
+#btnFecharPopup {
+    background: linear-gradient(90deg, #F9B17A 0%, #8085A8 100%);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    border-radius: 40px;
+    width: 190px;
+    font-size: 28px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#btnFecharPopup:hover {
+    background-color: #0056b3;
+}
