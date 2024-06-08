@@ -70,6 +70,7 @@
     border: none;
     font-size: 18px;
     color:#F5F5F5;
+    cursor: pointer;
 }
 
 .forms_cadastro {
