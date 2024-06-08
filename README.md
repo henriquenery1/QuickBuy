@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/Frame 4.png" alt="Logo do projeto" height="250">
+  <img src="./images/Logo_documentacao.png" alt="Logo do projeto" height="140">
 </p>
 <h1 align='center'>🏪 Bem vindo! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1> 
 <br>
