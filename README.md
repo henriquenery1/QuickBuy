@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./images/Logo_documentacao.png" alt="Logo do projeto" height="140">
 </p>
-<h1 align='center'>🏪 Bem vindo! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1> 
+<h1 align='center'><img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"> Bem vindo! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1> 
 <br>
 
 Quickbuy é um projeto interdisciplinar para faculdade de um sistema para mercados. Ele oferece uma plataforma eficiente para gerenciar produtos, controle de estoque, registro de vendas, cadastro de funcionários e controle financeiro, facilitando a operação de um mercado.
