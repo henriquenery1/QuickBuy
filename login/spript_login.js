@@ -9,6 +9,7 @@ function fazerLogin() {
     { nome: "teste", senha: "123" },
     { nome: "Henrique", senha: "senha" },
     { nome: "Paulo", senha: "01" },
+    { nome: "quickbuy", senha: "1234" },
   ];
 
   usuariosCadastrados = [...usuariosCadastrados, ...usuariosPadroes];
